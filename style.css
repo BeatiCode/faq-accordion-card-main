@@ -54,10 +54,11 @@ body {
 .card__block-questions {
     padding: 70px 100px 70px 0;
     flex: 0 0 450px;
+    align-items: stretch;
 }
 
 .faq__content {
-    max-width: 350px;
+    /* max-width: 350px; */
 }
 
 .faq__title {
@@ -70,6 +71,7 @@ body {
     padding-bottom: 20px;
     margin-top: 20px;
     border-bottom: 1px hsl(240, 6%, 50%) solid;
+    flex: 0 0 450px;
 }
 
 .question label {
@@ -88,6 +90,7 @@ body {
     display: none;
     padding-top: 20px;
     color: hsl(240, 6%, 50%);
+    
 }
 
 .attribution {
@@ -138,8 +141,9 @@ input:checked~label .arrow {
         position: absolute;
     }
     .card__block-questions {
-        padding: 140px 0 50px 0;
-        flex: auto;
+        padding: 140px 0px 50px 0px;
+        margin: 0;
+        width: 100%;
     }
     .question {
         margin: 20px 20px;
