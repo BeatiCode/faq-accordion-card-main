@@ -139,6 +139,7 @@ input:checked~label .arrow {
     }
     .card__block-questions {
         padding: 140px 0 50px 0;
+        flex: auto;
     }
     .question {
         margin: 20px 20px;
