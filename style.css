@@ -90,6 +90,17 @@ body {
     color: hsl(240, 6%, 50%);
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+}
+
+.attribution a {
+    color: black;
+}
+
 input:checked~label {
     font-weight: 700;
 }
@@ -102,7 +113,8 @@ input:checked~label .arrow {
     transform: rotate(180deg);
 }
 
-.question label:hover {
+.question label:hover, 
+.attribution a:hover {
     color: hsl(14, 88%, 65%);
 }
 
@@ -121,27 +133,21 @@ input:checked~label .arrow {
         position: absolute;
         top: 20px;
     }
-    .ilustration-box-mobile-pattern{
+    .ilustration-box-mobile-pattern {
         display: inline-block;
         position: absolute;
     }
     .card__block-questions {
         padding: 140px 0 50px 0;
     }
-
     .question {
         margin: 20px 20px;
         font-size: 14px;
     }
-
     .faq__title {
         text-align: center;
     }
-
     .question:last-child {
         margin-bottom: 0;
     }
-
-    
-
 }
