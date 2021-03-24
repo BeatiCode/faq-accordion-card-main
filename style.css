@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(238, 29%, 16%);
+}
+
+body {
+    font-size: 13px;
+}
+
+._container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.faq {
+    padding: 130px 25px;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.content {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.card {
+    height: auto;
+    background-color: white;
+    background-image: url(images/illustration-woman-online-desktop.svg), url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 70px left -80px, top -290px left -570px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ilustration-box-desktop {
+    height: 186px;
+    position: relative;
+    top: 205px;
+    left: -93px;
+}
+
+.ilustration-box-mobile {
+    display: none;
+}
+
+.ilustration-box-mobile-pattern {
+    display: none;
+}
+
+.card__block-questions {
+    padding: 70px 100px 70px 0;
+    flex: 0 0 450px;
+}
+
+.faq__content {
+    max-width: 350px;
+}
+
+.faq__title {
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+
+.question {
+    color: hsl(240, 6%, 50%);
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px hsl(240, 6%, 50%) solid;
+}
+
+.question label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.question input {
+    display: none;
+}
+
+.text {
+    display: none;
+    padding-top: 20px;
+    color: hsl(240, 6%, 50%);
+}
+
+input:checked~label {
+    font-weight: 700;
+}
+
+input:checked~.text {
+    display: block;
+}
+
+input:checked~label .arrow {
+    transform: rotate(180deg);
+}
+
+.question label:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+    .ilustration-box-desktop {
+        display: none;
+    }
+    .ilustration-box-mobile {
+        display: block;
+        margin-right: 25px;
+        position: absolute;
+        top: 20px;
+    }
+    .ilustration-box-mobile-pattern{
+        display: inline-block;
+        position: absolute;
+    }
+    .card__block-questions {
+        padding: 140px 0 50px 0;
+    }
+
+    .question {
+        margin: 20px 20px;
+        font-size: 14px;
+    }
+
+    .faq__title {
+        text-align: center;
+    }
+
+    .question:last-child {
+        margin-bottom: 0;
+    }
+
+    
+
+}
