@@ -54,11 +54,6 @@ body {
 .card__block-questions {
     padding: 70px 100px 70px 0;
     flex: 0 0 450px;
-    align-items: stretch;
-}
-
-.faq__content {
-    /* max-width: 350px; */
 }
 
 .faq__title {
@@ -82,7 +77,7 @@ body {
     cursor: pointer;
 }
 
-.question input {
+.question input[type=radio] {
     display: none;
 }
 
@@ -90,7 +85,7 @@ body {
     display: none;
     padding-top: 20px;
     color: hsl(240, 6%, 50%);
-    
+    max-height: 50px;
 }
 
 .attribution {
